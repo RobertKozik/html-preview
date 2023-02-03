@@ -2,25 +2,32 @@
 <html>
       <head>
             <title>My First Web Page</title>
+            <script type="text/javascript">
+                  function resizeIframe(iframe) {
+                        iframe.height =
+                              iframe.contentWindow.document.body.scrollHeight +
+                              "px";
+                  }
+            </script>
       </head>
       <body style="width: 100vw; height: 100vh">
             <h1>NEW LOOKS</h1>
             <iframe
+                  onload="resizeIframe(this)"
                   src="https://staging--mac-admin.netlify.app/widgets/new-looks?region=476bO2Ed3xYanleykpKgBeVD&amp;brand=JegvznyaBpW158Oro5A2xXMQ"
                   title="trending looks"
-                  style="width: 100vmin; height: 50vmin"
             ></iframe>
             <h1>FEATURED ARTISTS</h1>
             <iframe
+                  onload="resizeIframe(this)"
                   src="https://staging--mac-admin.netlify.app/widgets/featured-artists?region=476bO2Ed3xYanleykpKgBeVD&brand=JegvznyaBpW158Oro5A2xXMQ"
                   title="trending looks"
-                  style="width: 100vmin; height: 50vmin"
             ></iframe>
             <h1>TRENDING LOOKS</h1>
             <iframe
+                  onload="resizeIframe(this)"
                   src="https://staging--mac-admin.netlify.app/widgets/trending-looks?region=476bO2Ed3xYanleykpKgBeVD&brand=JegvznyaBpW158Oro5A2xXMQ"
                   title="trending looks"
-                  style="width: 100vmin; height: 50vmin"
             ></iframe>
       </body>
 </html>
