@@ -6,27 +6,27 @@
       <script type="text/javascript">
             function resizeIframe() {
                   const iFrame = document.getElementById('test');
-                  console.log(iFrame.contentDocument);
-                  // iframe.height =
-                  //       iframe.contentWindow.document.body.scrollHeight +
-                  //       "px";
+                  console.log(iFrame.contentWindow.document.body.scrollHeight);
+                  iframe.height =
+                        iframe.contentWindow.document.body.scrollHeight +
+                        "px";
             }
       </script>
 </head>
 
 <body>
       <h1>NEW LOOKS</h1>
-      <iframe id="test" onload="resizeIframe()"
+      <!-- <iframe id="test" onload="resizeIframe()"
             src="https://staging--mac-admin.netlify.app/widgets/new-looks?region=476bO2Ed3xYanleykpKgBeVD&amp;brand=JegvznyaBpW158Oro5A2xXMQ"
             title="trending looks" style="border: 0; width: 100%; height: 25vh"></iframe>
       <h1>TRENDING LOOKS</h1>
-      <!-- <iframe onload="resizeIframe(this)"
-            src="https://staging--mac-admin.netlify.app/widgets/trending-looks?region=476bO2Ed3xYanleykpKgBeVD&brand=JegvznyaBpW158Oro5A2xXMQ"
-            title="trending looks" style="border: 0; width: 100%; height: 25vh"></iframe>
-      <h1>FEATURED ARTISTS</h1>
       <iframe onload="resizeIframe(this)"
-            src="https://staging--mac-admin.netlify.app/widgets/featured-artists?region=476bO2Ed3xYanleykpKgBeVD&brand=JegvznyaBpW158Oro5A2xXMQ"
+            src="https://staging--mac-admin.netlify.app/widgets/trending-looks?region=476bO2Ed3xYanleykpKgBeVD&brand=JegvznyaBpW158Oro5A2xXMQ"
             title="trending looks" style="border: 0; width: 100%; height: 25vh"></iframe> -->
+      <h1>FEATURED ARTISTS</h1>
+      <iframe id="test" onload="resizeIframe(this)"
+            src="https://staging--mac-admin.netlify.app/widgets/featured-artists?region=476bO2Ed3xYanleykpKgBeVD&brand=JegvznyaBpW158Oro5A2xXMQ"
+            title="trending looks" style="border: 0; width: 100%; height: 25vh"></iframe>
 </body>
 
 </html>
