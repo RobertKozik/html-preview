@@ -1,48 +1,25 @@
 <!DOCTYPE html>
 <html>
+      <head> </head>
 
-<head>
-      <title>My First Web Page</title>
-      <script type="text/javascript">
-            function resizeIframe() {
-                  const iFrame = document.getElementById('test');
-                  console.log(iFrame.contentWindow.document.body.scrollHeight);
-                  iframe.height =
-                        iframe.contentWindow.document.body.scrollHeight +
-                        "px";
-            }
-      </script>
-</head>
-
-<body>
-      <h1>NEW LOOKS</h1>
-      <!-- <iframe id="test" onload="resizeIframe()"
-            src="https://staging--mac-admin.netlify.app/widgets/new-looks?region=476bO2Ed3xYanleykpKgBeVD&amp;brand=JegvznyaBpW158Oro5A2xXMQ"
-            title="trending looks" style="border: 0; width: 100%; height: 25vh"></iframe>
-      <h1>TRENDING LOOKS</h1>
-      <iframe onload="resizeIframe(this)"
-            src="https://staging--mac-admin.netlify.app/widgets/trending-looks?region=476bO2Ed3xYanleykpKgBeVD&brand=JegvznyaBpW158Oro5A2xXMQ"
-            title="trending looks" style="border: 0; width: 100%; height: 25vh"></iframe> -->
-      <h1>FEATURED ARTISTS</h1>
-      <iframe id="test" onload="resizeIframe(this)"
-            src="https://staging--mac-admin.netlify.app/widgets/featured-artists?region=476bO2Ed3xYanleykpKgBeVD&brand=JegvznyaBpW158Oro5A2xXMQ"
-            title="trending looks" style="border: 0; width: 100%; height: 25vh"></iframe>
-</body>
-
+      <body>
+            <h1>NEW LOOKS</h1>
+            <iframe
+                  src="http://localhost:3000/widgets/new-looks?region=476bO2Ed3xYanleykpKgBeVD&amp;brand=JegvznyaBpW158Oro5A2xXMQ"
+                  title="trending looks"
+                  style="border: 0; width: 100%; min-height: 400px"
+            ></iframe>
+            <h1>TRENDING LOOKS</h1>
+            <iframe
+                  src="http://localhost:3000/widgets/trending-looks?region=476bO2Ed3xYanleykpKgBeVD&brand=JegvznyaBpW158Oro5A2xXMQ"
+                  title="trending looks"
+                  style="border: 0; width: 100%; min-height: 400px"
+            ></iframe>
+            <h1>FEATURED ARTISTS</h1>
+            <iframe
+                  src="https://staging--mac-admin.netlify.app/widgets/featured-artists?region=476bO2Ed3xYanleykpKgBeVD&brand=JegvznyaBpW158Oro5A2xXMQ"
+                  title="trending looks"
+                  style="border: 0; width: 100%; min-height: 400px"
+            ></iframe>
+      </body>
 </html>
-
-
-.iframe-container {
-overflow: hidden;
-/* 16:9 aspect ratio */
-padding-top: 56.25%;
-position: relative;
-}
-.iframe-container iframe {
-border: 0;
-height: 100%;
-left: 0;
-position: absolute;
-top: 0;
-width: 100%;
-}
